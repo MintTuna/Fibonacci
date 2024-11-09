@@ -1,13 +1,14 @@
+//ì¬ê·€í•¨ìˆ˜ ì´ìš© í”¼ë³´ë‚˜ì¹˜ ì•Œê³ ë¦¬ì¦˜
 #include<stdio.h>
 #include <math.h>
-typedef unsigned long long ull; // ÄÚµå¸¦ ±ò²ûÇÏ°Ô ¾²±â À§ÇÑ ÀüÃ³¸®  
+typedef unsigned long long ull; // ì½”ë“œë¥¼ ê¹”ë”í•˜ê²Œ ì“°ê¸° ìœ„í•œ ì „ì²˜ë¦¬  
 
 ull fibonacci (ull n);
 
 int main() {
 	int n;
 	ull result;
-	printf("n¹øÂ° ÀÚ¿¬¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä: ");
+	printf("në²ˆì§¸ ìì—°ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”: ");
 	scanf("%d", &n);
 	for(int i=0;i<n;i++) {
 		result = fibonacci(n);
