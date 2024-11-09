@@ -1,12 +1,13 @@
+// í”¼ë³´ë‚˜ì¹˜ìˆ˜ì—´ ì¼ë°˜í•­ ì´ìš©
 #include<stdio.h>
 #include <math.h>
-typedef unsigned long long ull; // ÄÚµå¸¦ ±ò²ûÇÏ°Ô ¾²±â À§ÇÑ ÀüÃ³¸®  
-#define root5 sqrt(5) // ·çÆ® 5 ¸ÅÅ©·Î»ó¼ö 
+typedef unsigned long long ull; // ì½”ë“œë¥¼ ê¹”ë”í•˜ê²Œ ì“°ê¸° ìœ„í•œ ì „ì²˜ë¦¬  
+#define root5 sqrt(5) // ë£¨íŠ¸ 5 ë§¤í¬ë¡œìƒìˆ˜ 
 ull fibonacci (ull n);
 
 int main() {
 	int n;
-	printf("n¹øÂ° ÀÚ¿¬¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä: ");
+	printf("në²ˆì§¸ ìì—°ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”: ");
 	scanf("%d", &n);
 	printf("%llu", fibonacci(n));
 	return 0;
@@ -14,8 +15,8 @@ int main() {
 
 ull fibonacci (ull n) {
 	if (n == 0) {
-		return 1; // 0¹øÂ° ÇÇº¸³ªÄ¡ ¼ö = 1 
+		return 1; // 0ë²ˆì§¸ í”¼ë³´ë‚˜ì¹˜ ìˆ˜ = 1 
 	} else if (n == 1) {
-		return 1; // 1¹øÂ° ÇÇº¸³ªÄ¡ ¼ö = 1 
+		return 1; // 1ë²ˆì§¸ í”¼ë³´ë‚˜ì¹˜ ìˆ˜ = 1 
 	} else return (1/root5) * (pow((1+root5)/2, n) - pow((1-root5)/2, n)); 
 }
